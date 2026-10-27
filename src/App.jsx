@@ -4,11 +4,32 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
+
+function Header(){
+  return <><header><h1>Заголовок страницы</h1></header></>
+}
+function MainContent(){
+   return <><main><p>основной контент</p><Section></Section></main>
+   </>
+}
+function Section(){
+  return <><section>
+    <h2>Заголовок секции</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo, nulla, illo repellendus sapiente expedita assumenda reprehenderit corporis obcaecati ea, debitis quaerat laboriosam autem animi iste id tempora temporibus excepturi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab voluptatibus in rem neque eveniet soluta voluptate quibusdam est quas ipsum error laboriosam iste eius et, corrupti vitae nam facere perspiciatis?</p>
+    </section>
+  </>}
+
+function Footer(){return <><footer><h3>2026</h3></footer></>}
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Header></Header>
+    <MainContent></MainContent>
+    <Footer></Footer>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
